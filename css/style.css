@@ -21,11 +21,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
+		background-color: #00002e;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 
 	}
 
 /*TOPO*/
 	header.topo{
+		display: flex;
+		justify-content: center;
 		
 	}
 
@@ -34,5 +38,69 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		
+	}
+	h2 {
+		color: white;
+    	text-align: center;
+		font-size: 48px;
+		font-weight: bold;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		max-width: 858px;
+		height: 858px;
+
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 429px;
+		
+	}
+	li {
+		width: 186px;
+		
+	}
+
+	li img {
+		width: 100%;
+		
+	}
+	figcaption {
+		color: white;
+		text-align: center;
+	}
+	footer {
+		text-align: center;
+	}
+	button {
+		background-color: #00002e;
+    	color: white;
+    	width: 218px;
+    	height: 62px;
+    	padding: 0;
+    	border: 2px solid white;
+		font-size: 18px;
+	}
+	@media (min-width:1440px)  {
+		ul {
+			flex-wrap: nowrap;
+			width: 858px;
+
+		}
+		h2 {
+			font-size: 78px;
+		}
+		header.topo {
+			justify-content: start;
+		}
 	}
