@@ -37,6 +37,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	
 
 /*PÁGINA INICIAL*/
+	h3 {
+		display: none;
+	}
 	div.pg-home{
 		display: flex;
 		flex-direction: column;
@@ -55,7 +58,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		justify-content: space-evenly;
 		align-items: center;
 		max-width: 858px;
-		height: 858px;
+		min-height: 858px;
 
 	}
 	ul {
@@ -63,7 +66,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
-		width: 429px;
+		max-width: 429px;
 		
 	}
 	li {
@@ -94,7 +97,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	@media (min-width:1440px)  {
 		ul {
 			flex-wrap: nowrap;
-			width: 858px;
+			min-width: 858px;
 
 		}
 		h2 {
